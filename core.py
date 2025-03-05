@@ -289,7 +289,7 @@ async def default_download(url, cmd, name):
 #------------------Normal handler for the documents-------------------
 
 async def send_doc(bot: Client, m: Message,cc,ka,cc1,count,name):
-    reply = await m.reply_text(f"**Uploading ..🚀..** - `{name}`\n╰────⌈**ᡕᠵ᠊ᡃ່࡚ࠢ࠘ ⸝່ࠡࠣ᠊߯᠆ࠣ࠘ᡁࠣ࠘᠊᠊ࠢ࠘𐡏 —͟͞͞ ℝịcị𐌽**⌋────╯")
+    reply = await m.reply_text(f"**Uploading ..🚀..** - `{name}`\n╰────⌈**✨ 𝘴𝘴ᥴ ᭙ꪖꪶꪖ ✨**⌋────╯")
     time.sleep(1)
     await m.reply_document(ka,caption=cc1)
     count+=1
@@ -300,7 +300,7 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,count,name):
 
 #-----------------Send it to the log channel-----------------------
 async def send_doc(bot: Client, m: Message, cc, ka, cc1, count, name, log_channel_id):
-    reply = await m.reply_text(f"**Uploading ..🚀..** - `{name}`\n╰────⌈**ᡕᠵ᠊ᡃ່࡚ࠢ࠘ ⸝່ࠡࠣ᠊߯᠆ࠣ࠘ᡁࠣ࠘᠊᠊ࠢ࠘𐡏 —͟͞͞ ℝịcị𐌽**⌋────╯")
+    reply = await m.reply_text(f"**Uploading ..🚀..** - `{name}`\n╰────⌈**✨ 𝘴𝘴ᥴ ᭙ꪖꪶꪖ ✨**⌋────╯")
     time.sleep(1)
     # Upload the document and capture the message
     message = await m.reply_document(ka, caption=cc1)
