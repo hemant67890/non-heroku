@@ -376,7 +376,7 @@ def split_video(filename, max_size):
 
 #-----------------------Emoji handler------------------------------------
 
-EMOJIS = ["🦁", "🐼"]
+EMOJIS = ["🦁", "🐶", "🐼", "🐱", "👻", "🐻‍❄️", "☁️", "🌧️", "🦁", "🐠", "🦋", "🐈‍⬛", "🐆", "🐅"]
 emoji_counter = 0  # Initialize a global counter
 
 def get_next_emoji():
