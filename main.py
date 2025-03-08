@@ -1151,7 +1151,8 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
 
             else:
                 #cmd = f"yt-dlp --verbose -f '{ytf}' '{url}' -o '{name}.mp4' --no-check-certificate --retry 5 --retries 10 --concurrent-fragments 8"
-                cmd = f"yt-dlp --verbose --cookies '{cookies_file_path}' -f '{ytf}' '{url}' -o '{name}.mp4' --concurrent-fragments 8"
+                #cmd = f"yt-dlp --verbose --cookies '{cookies_file_path}' -f '{ytf}' '{url}' -o '{name}.mp4' --concurrent-fragments 8"
+                cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
 
 #===============================================================
@@ -1173,6 +1174,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
 
             else:
                 cc = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 𝐓𝐢𝐭𝐥𝐞 »  <pre>{name1}.mkv</pre>**\n**➭ 𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
+                ccyt = f' **╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}**\n╰━━━━━━━━━━━╯ **\n**➭ 𝐓𝐢𝐭𝐥𝐞 »  <pre>{name1}.mkv</pre>**\n**➭ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝐋𝐢𝐧𝐤 »**\n**{url}\n**➭ 𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'
                 cc1 = f'**╭━━━━━━━━━━━╮**\n**➭ 𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)} **\n╰━━━━━━━━━━━╯**\n**➭ 𝐓𝐢𝐭𝐥𝐞 » <pre>{name1}.pdf</pre>** \n**➭ 𝐁𝐚𝐭𝐜𝐡 »  {b_name}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : {CR}**\n**━━━━━━━━━━✦✗✦━━━━━━━━━━**'                           
                 
             if "drive" in url:
